@@ -1,0 +1,16 @@
+@echo off
+echo Starting Company Directory Application...
+echo.
+echo Starting JSON Server on port 3001...
+start cmd /k "cd /d %~dp0 && npx json-server --watch db.json --port 3001"
+timeout /t 3 /nobreak > nul
+echo.
+echo Starting Vite Development Server on port 5173...
+start cmd /k "cd /d %~dp0 && npm run dev"
+echo.
+echo Both servers are starting...
+echo JSON Server: http://localhost:3001
+echo Application: http://localhost:5173
+echo.
+echo Press any key to exit this window (servers will continue running)...
+pause > nul

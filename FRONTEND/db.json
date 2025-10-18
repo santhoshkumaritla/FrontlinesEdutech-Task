@@ -1,0 +1,254 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "name": "TechCorp Solutions",
+      "industry": "Technology",
+      "location": "San Francisco, CA",
+      "description": "Leading provider of enterprise software solutions and cloud computing services.",
+      "employees": 5000,
+      "founded": 2010,
+      "website": "www.techcorp.com"
+    },
+    {
+      "id": 2,
+      "name": "Global Finance Group",
+      "industry": "Finance",
+      "location": "New York, NY",
+      "description": "International financial services company specializing in investment banking.",
+      "employees": 12000,
+      "founded": 1995,
+      "website": "www.globalfinance.com"
+    },
+    {
+      "id": 3,
+      "name": "HealthFirst Medical",
+      "industry": "Healthcare",
+      "location": "Boston, MA",
+      "description": "Innovative healthcare provider focused on patient-centered care and medical research.",
+      "employees": 3500,
+      "founded": 2005,
+      "website": "www.healthfirst.com"
+    },
+    {
+      "id": 4,
+      "name": "EcoEnergy Inc",
+      "industry": "Energy",
+      "location": "Austin, TX",
+      "description": "Renewable energy company developing sustainable power solutions.",
+      "employees": 2000,
+      "founded": 2015,
+      "website": "www.ecoenergy.com"
+    },
+    {
+      "id": 5,
+      "name": "RetailMax Corporation",
+      "industry": "Retail",
+      "location": "Chicago, IL",
+      "description": "Multi-channel retail company with both online and physical store presence.",
+      "employees": 8000,
+      "founded": 2000,
+      "website": "www.retailmax.com"
+    },
+    {
+      "id": 6,
+      "name": "DataDrive Analytics",
+      "industry": "Technology",
+      "location": "Seattle, WA",
+      "description": "Big data analytics platform helping businesses make data-driven decisions.",
+      "employees": 1500,
+      "founded": 2018,
+      "website": "www.datadrive.com"
+    },
+    {
+      "id": 7,
+      "name": "AutoMotion Motors",
+      "industry": "Automotive",
+      "location": "Detroit, MI",
+      "description": "Electric vehicle manufacturer pioneering autonomous driving technology.",
+      "employees": 6000,
+      "founded": 2012,
+      "website": "www.automotion.com"
+    },
+    {
+      "id": 8,
+      "name": "FoodFusion Brands",
+      "industry": "Food & Beverage",
+      "location": "Los Angeles, CA",
+      "description": "Food and beverage company with a portfolio of popular consumer brands.",
+      "employees": 4500,
+      "founded": 1998,
+      "website": "www.foodfusion.com"
+    },
+    {
+      "id": 9,
+      "name": "BuildRight Construction",
+      "industry": "Construction",
+      "location": "Houston, TX",
+      "description": "Commercial and residential construction company specializing in sustainable building.",
+      "employees": 3000,
+      "founded": 2008,
+      "website": "www.buildright.com"
+    },
+    {
+      "id": 10,
+      "name": "EduLearn Platform",
+      "industry": "Education",
+      "location": "Cambridge, MA",
+      "description": "Online education platform offering courses and certifications.",
+      "employees": 1200,
+      "founded": 2016,
+      "website": "www.edulearn.com"
+    },
+    {
+      "id": 11,
+      "name": "MediaStream Networks",
+      "industry": "Media & Entertainment",
+      "location": "Los Angeles, CA",
+      "description": "Streaming service provider with original content production.",
+      "employees": 7000,
+      "founded": 2011,
+      "website": "www.mediastream.com"
+    },
+    {
+      "id": 12,
+      "name": "SecureBank Financial",
+      "industry": "Finance",
+      "location": "Charlotte, NC",
+      "description": "Regional bank providing personal and commercial banking services.",
+      "employees": 5500,
+      "founded": 1985,
+      "website": "www.securebank.com"
+    },
+    {
+      "id": 13,
+      "name": "CloudNine Services",
+      "industry": "Technology",
+      "location": "San Jose, CA",
+      "description": "Cloud infrastructure and DevOps automation platform.",
+      "employees": 2500,
+      "founded": 2014,
+      "website": "www.cloudnine.com"
+    },
+    {
+      "id": 14,
+      "name": "PharmaCare Research",
+      "industry": "Healthcare",
+      "location": "Philadelphia, PA",
+      "description": "Pharmaceutical company focused on drug discovery and development.",
+      "employees": 9000,
+      "founded": 1992,
+      "website": "www.pharmacare.com"
+    },
+    {
+      "id": 15,
+      "name": "GreenGrow Agriculture",
+      "industry": "Agriculture",
+      "location": "Des Moines, IA",
+      "description": "Sustainable agriculture company specializing in organic farming.",
+      "employees": 1800,
+      "founded": 2009,
+      "website": "www.greengrow.com"
+    },
+    {
+      "id": 16,
+      "name": "TravelWise Booking",
+      "industry": "Travel & Hospitality",
+      "location": "Miami, FL",
+      "description": "Online travel agency and hotel booking platform.",
+      "employees": 3200,
+      "founded": 2013,
+      "website": "www.travelwise.com"
+    },
+    {
+      "id": 17,
+      "name": "FashionForward Retail",
+      "industry": "Retail",
+      "location": "New York, NY",
+      "description": "Fashion retail brand with sustainable and ethical clothing lines.",
+      "employees": 2200,
+      "founded": 2017,
+      "website": "www.fashionforward.com"
+    },
+    {
+      "id": 18,
+      "name": "CyberShield Security",
+      "industry": "Technology",
+      "location": "Washington, DC",
+      "description": "Cybersecurity firm providing enterprise security solutions.",
+      "employees": 1600,
+      "founded": 2015,
+      "website": "www.cybershield.com"
+    },
+    {
+      "id": 19,
+      "name": "SolarPower Innovations",
+      "industry": "Energy",
+      "location": "Phoenix, AZ",
+      "description": "Solar panel manufacturer and renewable energy installer.",
+      "employees": 2800,
+      "founded": 2011,
+      "website": "www.solarpower.com"
+    },
+    {
+      "id": 20,
+      "name": "LogisticsPro Express",
+      "industry": "Logistics",
+      "location": "Memphis, TN",
+      "description": "Global logistics and supply chain management company.",
+      "employees": 10000,
+      "founded": 1988,
+      "website": "www.logisticspro.com"
+    },
+    {
+      "id": 21,
+      "name": "BioTech Innovations",
+      "industry": "Healthcare",
+      "location": "San Diego, CA",
+      "description": "Biotechnology company developing cutting-edge medical treatments.",
+      "employees": 4000,
+      "founded": 2007,
+      "website": "www.biotechinno.com"
+    },
+    {
+      "id": 22,
+      "name": "FinancePro Advisors",
+      "industry": "Finance",
+      "location": "Boston, MA",
+      "description": "Wealth management and financial planning services.",
+      "employees": 800,
+      "founded": 2010,
+      "website": "www.financepro.com"
+    },
+    {
+      "id": 23,
+      "name": "SmartHome Technologies",
+      "industry": "Technology",
+      "location": "Austin, TX",
+      "description": "IoT and smart home automation solutions provider.",
+      "employees": 1400,
+      "founded": 2016,
+      "website": "www.smarthometech.com"
+    },
+    {
+      "id": 24,
+      "name": "Gourmet Foods International",
+      "industry": "Food & Beverage",
+      "location": "Portland, OR",
+      "description": "Specialty food distributor and gourmet product manufacturer.",
+      "employees": 2600,
+      "founded": 2003,
+      "website": "www.gourmetfoods.com"
+    },
+    {
+      "id": 25,
+      "name": "AeroSpace Dynamics",
+      "industry": "Aerospace",
+      "location": "Seattle, WA",
+      "description": "Aerospace engineering and aircraft manufacturing company.",
+      "employees": 15000,
+      "founded": 1975,
+      "website": "www.aerospace-dynamics.com"
+    }
+  ]
+}
