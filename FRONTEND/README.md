@@ -73,36 +73,50 @@ npm run dev
 ## Project Structure
 
 ```
-FRONTEND/
-├── src/
-│   ├── components/
-│   │   ├── Header.tsx           # App header with logo, search, and dark mode toggle
-│   │   ├── FilterPanel.tsx      # Filter and sorting controls
-│   │   ├── CompanyList.tsx      # Main list component with view mode toggle
-│   │   ├── CompanyCard.tsx      # Card view component for individual companies
-│   │   ├── CompanyTable.tsx     # Table view component for desktop
-│   │   ├── Pagination.tsx       # Pagination controls
-│   │   ├── Loader.tsx           # Loading spinner component
-│   │   └── Error.tsx            # Error display component
-│   ├── context/
-│   │   └── CompanyContext.tsx   # Global state management with Context API
-│   ├── services/
-│   │   └── api.ts               # API service for fetching company data
-│   ├── App.tsx                  # Main application component
-│   ├── main.tsx                 # Application entry point
-│   └── index.css                # Global styles and Tailwind configuration
-├── public/
-│   └── api/                     # Static API endpoint for production
-├── db.json                      # Mock database for JSON Server
-├── tailwind.config.js           # Tailwind CSS configuration
-├── postcss.config.js            # PostCSS configuration
-├── vite.config.ts               # Vite build configuration
-├── tsconfig.json                # TypeScript configuration
-├── package.json                 # Dependencies and scripts
-├── README.md                    # Project documentation
-├── DOCUMENTATION.md             # Detailed technical documentation
-├── FEATURES.md                  # Feature specifications
-└── USER_GUIDE.md                # End-user guide
+Frontline/
+├── Backend/
+│   ├── db.json                  # Mock database with company data
+│   └── package.json             # Backend dependencies (JSON Server)
+│
+├── FRONTEND/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Header.tsx           # App header with logo, search, and dark mode toggle
+│   │   │   ├── FilterPanel.tsx      # Filter and sorting controls
+│   │   │   ├── CompanyList.tsx      # Main list component with view mode toggle
+│   │   │   ├── CompanyCard.tsx      # Card view component for individual companies
+│   │   │   ├── CompanyTable.tsx     # Table view component for desktop
+│   │   │   ├── Pagination.tsx       # Pagination controls
+│   │   │   ├── Loader.tsx           # Loading spinner component
+│   │   │   └── Error.tsx            # Error display component
+│   │   ├── context/
+│   │   │   └── CompanyContext.tsx   # Global state management with Context API
+│   │   ├── services/
+│   │   │   └── api.ts               # API service for fetching company data
+│   │   ├── assets/                  # Static assets (images, fonts, etc.)
+│   │   ├── App.tsx                  # Main application component
+│   │   ├── App.css                  # Application-specific styles
+│   │   ├── main.tsx                 # Application entry point
+│   │   └── index.css                # Global styles and Tailwind configuration
+│   ├── public/
+│   │   └── api/                     # Static API endpoint for production
+│   ├── index.html                   # HTML entry point
+│   ├── tailwind.config.js           # Tailwind CSS configuration
+│   ├── postcss.config.js            # PostCSS configuration
+│   ├── vite.config.ts               # Vite build configuration
+│   ├── tsconfig.json                # TypeScript configuration (main)
+│   ├── tsconfig.app.json            # TypeScript configuration (app)
+│   ├── tsconfig.node.json           # TypeScript configuration (node)
+│   ├── eslint.config.js             # ESLint configuration
+│   ├── package.json                 # Frontend dependencies and scripts
+│   ├── start.bat                    # Windows batch startup script
+│   ├── start.ps1                    # PowerShell startup script
+│   ├── README.md                    # Project documentation
+│   ├── DOCUMENTATION.md             # Detailed technical documentation
+│   ├── FEATURES.md                  # Feature specifications
+│   └── USER_GUIDE.md                # End-user guide
+│
+└── .git/                        # Git repository metadata
 ```
 
 ## Installation & Setup
