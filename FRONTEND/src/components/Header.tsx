@@ -10,13 +10,13 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white dark:bg-slate-950 shadow-md dark:shadow-2xl dark:shadow-primary-500/10 sticky top-0 z-50 transition-colors duration-300 backdrop-blur-md border-b border-gray-200 dark:border-slate-800">
+    <header className="bg-white dark:bg-slate-950 shadow-md dark:shadow-2xl dark:shadow-blue-500/10 sticky top-0 z-50 transition-colors duration-300 backdrop-blur-md border-b border-gray-200 dark:border-slate-800">
       <div className="container mx-auto px-4 py-2.5">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
           {/* Logo and Title */}
           <div className="flex items-center gap-2.5">
-            <div className="bg-gradient-to-br from-primary-500 to-amber-500 p-1.5 rounded-lg shadow-lg">
-              <Building2 className="w-5 h-5 text-slate-950 dark:text-white" />
+            <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-1.5 rounded-lg shadow-lg">
+              <Building2 className="w-5 h-5 text-white" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-900 dark:text-white">
@@ -43,7 +43,7 @@ const Header: React.FC = () => {
               aria-label="Toggle dark mode"
             >
               {darkMode ? (
-                <Sun className="w-4.5 h-4.5 text-primary-500" />
+                <Sun className="w-4.5 h-4.5 text-blue-500" />
               ) : (
                 <Moon className="w-4.5 h-4.5 text-gray-700" />
               )}

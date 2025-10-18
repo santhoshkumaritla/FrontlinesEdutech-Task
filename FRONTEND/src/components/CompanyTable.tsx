@@ -36,16 +36,16 @@ const CompanyTable: React.FC<CompanyTableProps> = ({ companies }) => {
           {companies.map((company, index) => (
             <tr
               key={company.id}
-              className="hover:bg-blue-50 dark:hover:bg-slate-900/50 transition-all duration-300 group cursor-pointer border-l-4 border-transparent hover:border-blue-500 dark:hover:border-primary-500"
+              className="hover:bg-blue-50 dark:hover:bg-slate-900/50 transition-all duration-300 group cursor-pointer border-l-4 border-transparent hover:border-blue-500 dark:hover:border-blue-500"
               style={{ animationDelay: `${index * 50}ms` }}
             >
               <td className="px-6 py-4">
                 <div className="flex items-center gap-3">
-                  <div className="bg-gradient-to-br from-primary-500 to-amber-500 p-2 rounded-lg shadow-lg group-hover:shadow-xl group-hover:shadow-primary-500/50 group-hover:scale-110 transition-all duration-300">
-                    <Building2 className="w-5 h-5 text-slate-950" />
+                  <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-2 rounded-lg shadow-lg group-hover:shadow-xl group-hover:shadow-blue-500/50 group-hover:scale-110 transition-all duration-300">
+                    <Building2 className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <div className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-primary-400 transition-colors">
+                    <div className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                       {company.name}
                     </div>
                     <div className="text-xs text-gray-500 dark:text-slate-400 line-clamp-1 group-hover:text-gray-700 dark:group-hover:text-slate-300">
@@ -55,24 +55,24 @@ const CompanyTable: React.FC<CompanyTableProps> = ({ companies }) => {
                 </div>
               </td>
               <td className="px-6 py-4">
-                <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 dark:bg-primary-900/20 text-blue-700 dark:text-primary-400 border-2 border-blue-300 dark:border-primary-700/30 group-hover:scale-105 transition-transform duration-300">
+                <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 border-2 border-blue-300 dark:border-blue-700/30 group-hover:scale-105 transition-transform duration-300">
                   {company.industry}
                 </span>
               </td>
               <td className="px-6 py-4">
-                <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-slate-300 group-hover:text-blue-600 dark:group-hover:text-primary-400 transition-colors">
+                <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-slate-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   <MapPin className="w-4 h-4 text-blue-500 dark:text-slate-500" />
                   {company.location}
                 </div>
               </td>
               <td className="px-6 py-4">
-                <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-slate-300 group-hover:text-blue-600 dark:group-hover:text-primary-400 transition-colors">
+                <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-slate-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   <Users className="w-4 h-4 text-blue-500 dark:text-slate-500" />
                   {company.employees.toLocaleString()}
                 </div>
               </td>
               <td className="px-6 py-4">
-                <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-slate-300 group-hover:text-blue-600 dark:group-hover:text-primary-400 transition-colors">
+                <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-slate-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   <Calendar className="w-4 h-4 text-blue-500 dark:text-slate-500" />
                   {company.founded}
                 </div>

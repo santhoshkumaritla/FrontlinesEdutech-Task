@@ -66,7 +66,7 @@ const Pagination: React.FC = () => {
   }
 
   return (
-    <div className="bg-white dark:bg-slate-950 rounded-xl shadow-md dark:shadow-2xl dark:shadow-primary-500/10 p-4 mt-6 border border-gray-200 dark:border-slate-800">
+    <div className="bg-white dark:bg-slate-950 rounded-xl shadow-md dark:shadow-2xl dark:shadow-blue-500/10 p-4 mt-6 border border-gray-200 dark:border-slate-800">
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
         {/* Items per page */}
         <div className="flex items-center gap-2">
@@ -111,7 +111,7 @@ const Pagination: React.FC = () => {
                     onClick={() => handlePageChange(page as number)}
                     className={`px-3 py-1 rounded-lg text-sm font-medium transition-all duration-300 ${
                       currentPage === page
-                        ? 'bg-gradient-to-r from-primary-500 to-amber-500 text-slate-950 dark:text-white shadow-lg shadow-primary-500/50'
+                        ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-lg shadow-blue-500/50'
                         : 'bg-gray-100 dark:bg-slate-900/50 text-gray-700 dark:text-slate-300 hover:bg-gray-200 dark:hover:bg-slate-800/50 border border-transparent dark:border-slate-800'
                     }`}
                   >

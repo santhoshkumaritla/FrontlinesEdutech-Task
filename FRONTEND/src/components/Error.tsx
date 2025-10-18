@@ -20,7 +20,7 @@ const Error: React.FC<ErrorProps> = ({ message, onRetry }) => {
         {onRetry && (
           <button
             onClick={onRetry}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-500 to-amber-500 hover:from-primary-600 hover:to-amber-600 text-slate-950 dark:text-white font-medium rounded-lg shadow-lg shadow-primary-500/50 hover:shadow-primary-500/70 transition-all duration-300"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium rounded-lg shadow-lg shadow-blue-500/50 hover:shadow-blue-500/70 transition-all duration-300"
           >
             <RefreshCw className="w-4 h-4" />
             Try Again

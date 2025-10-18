@@ -35,11 +35,11 @@ const FilterPanel: React.FC = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-slate-950 rounded-xl shadow-md dark:shadow-2xl dark:shadow-primary-500/10 p-4 mb-4 sticky top-16 z-40 animate-fade-in border border-gray-200 dark:border-slate-800">
+    <div className="bg-white dark:bg-slate-950 rounded-xl shadow-md dark:shadow-2xl dark:shadow-blue-500/10 p-4 mb-4 sticky top-16 z-40 animate-fade-in border border-gray-200 dark:border-slate-800">
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-2">
-          <div className="p-1.5 rounded-lg bg-gradient-to-br from-primary-500 to-amber-500">
-            <Filter className="w-3.5 h-3.5 text-slate-950" />
+          <div className="p-1.5 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600">
+            <Filter className="w-3.5 h-3.5 text-white" />
           </div>
           <h2 className="text-base font-semibold text-gray-900 dark:text-white">
             Filters & Sorting
@@ -128,7 +128,7 @@ const FilterPanel: React.FC = () => {
       {/* Results Count */}
       <div className="mt-3 pt-3 border-t border-gray-200 dark:border-slate-800">
         <p className="text-xs text-gray-600 dark:text-slate-400">
-          Showing <span className="font-semibold text-primary-600 dark:text-primary-400">
+          Showing <span className="font-semibold text-blue-600 dark:text-blue-400">
             {filteredCompanies.length}
           </span> of <span className="font-semibold">{companies.length}</span> companies
         </p>
