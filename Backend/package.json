@@ -4,7 +4,10 @@
   "description": "JSON Server backend for company directory",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env PORT=$PORT json-server --watch db.json"
+    "scripts": {
+  "start": "cross-env PORT=$PORT json-server --watch db.json --host 0.0.0.0"
+}
+
   },
   "dependencies": {
     "json-server": "^0.17.3"
