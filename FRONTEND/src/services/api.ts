@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:10000/companies';
+const API_URL = 'https://frontlinesedutech-task-3.onrender.com/companies';
 
 export interface Company {
   id: number;
