@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/companies';
+const API_URL = 'http://localhost:10000/companies';
 
 export interface Company {
   id: number;

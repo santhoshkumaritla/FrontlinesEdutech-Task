@@ -73,7 +73,7 @@ npm run dev
 ## Project Structure
 
 ```
-company-directory/
+FRONTEND/
 ├── src/
 │   ├── components/
 │   │   ├── Header.tsx           # App header with logo, search, and dark mode toggle
@@ -91,11 +91,18 @@ company-directory/
 │   ├── App.tsx                  # Main application component
 │   ├── main.tsx                 # Application entry point
 │   └── index.css                # Global styles and Tailwind configuration
+├── public/
+│   └── api/                     # Static API endpoint for production
 ├── db.json                      # Mock database for JSON Server
 ├── tailwind.config.js           # Tailwind CSS configuration
 ├── postcss.config.js            # PostCSS configuration
+├── vite.config.ts               # Vite build configuration
+├── tsconfig.json                # TypeScript configuration
 ├── package.json                 # Dependencies and scripts
-└── README.md                    # Project documentation
+├── README.md                    # Project documentation
+├── DOCUMENTATION.md             # Detailed technical documentation
+├── FEATURES.md                  # Feature specifications
+└── USER_GUIDE.md                # End-user guide
 ```
 
 ## Installation & Setup
