@@ -26,17 +26,19 @@ start.bat
 **Option 2: Manual Start**
 
 ```bash
-# Terminal 1 - Start JSON Server
-npx json-server --watch db.json --port 3001
+# Terminal 1 - Start JSON Server (from Backend folder)
+cd Backend
+npm run server
 
-# Terminal 2 - Start Development Server
+# Terminal 2 - Start Development Server (from FRONTEND folder)
+cd FRONTEND
 npm run dev
 ```
 
 **Access the Application**
 
 - Frontend: http://localhost:5173
-- API: http://localhost:3001/companies
+- API: http://localhost:10000/companies
 
 📖 **For detailed documentation, see [DOCUMENTATION.md](./DOCUMENTATION.md)**
 
@@ -45,30 +47,35 @@ npm run dev
 ### Core Functionality
 
 - 📊 **Dual View Modes**: Switch between grid (card) layout for mobile/tablet and table layout for desktop
-- 🔍 **Advanced Search**: Real-time search functionality across company names and descriptions
+- 🔍 **Smart Search**: Real-time search functionality that filters companies by name (starts with search term)
 - 🎯 **Multi-Filter Support**: Filter companies by industry and location
 - 📈 **Flexible Sorting**: Sort by company name or industry in ascending/descending order
 - 📄 **Smart Pagination**: Efficient pagination with customizable items per page (5, 10, 25, 50)
 - 🌓 **Dark Mode**: Toggle between light and dark themes with persistent preference
 - 📱 **Fully Responsive**: Seamless experience across mobile, tablet, and desktop devices
+- 🎚️ **Auto-Collapse Filters**: Filter panel automatically collapses when scrolling for better viewing experience
 
 ### User Experience
 
-- ⚡ **Loading Indicators**: Visual feedback during data fetching
+- ⚡ **Loading Indicators**: Visual feedback during data fetching with responsive loader
 - ❌ **Error Handling**: User-friendly error messages with retry functionality
-- 🔢 **Result Counter**: Display total and filtered company counts
+- 🔢 **Result Counter**: Display total and filtered company counts in real-time
 - 🎨 **Smooth Animations**: Fade-in and slide-up animations for enhanced UX
-- 📌 **Sticky Elements**: Fixed header and filter panel for easy navigation
+- 📌 **Sticky Elements**: Fixed header and collapsible filter panel for easy navigation
 - 🎯 **Hover Effects**: Interactive hover states on all clickable elements
+- 🔽 **Collapsible Filters**: Filters auto-collapse on scroll with manual toggle option
+- 🎨 **Modern Blue Theme**: Professional blue color scheme throughout the application
 
 ### Technical Highlights
 
 - ⚛️ **React 19.1** with TypeScript for type-safe development
-- 🎨 **Tailwind CSS 4.1** for modern, utility-first styling
+- 🎨 **Tailwind CSS 3.4** for modern, utility-first styling with custom blue theme
 - 🔄 **Context API** for efficient global state management
 - 🌐 **Axios** for HTTP requests
 - 🎭 **Lucide React** for beautiful, consistent icons
-- 📦 **JSON Server** for mock backend API
+- 📦 **JSON Server 0.17.4** for mock backend API
+- 🔍 **Intersection Observer API** for scroll-based filter panel collapse
+- 🎯 **TypeScript 5.9** for enhanced type safety and developer experience
 
 ## Project Structure
 
@@ -135,19 +142,23 @@ npm install
 
 ### Step 2: Start the Mock Backend API
 
-Open a new terminal window and run:
+Navigate to the Backend folder and start the server:
 
 ```bash
+cd Backend
+npm install  # First time only
 npm run server
 ```
 
-This will start JSON Server on `http://localhost:3001` with the company data.
+This will start JSON Server on `http://localhost:10000` with the company data.
 
 ### Step 3: Start the Development Server
 
-In another terminal window, run:
+In another terminal window, navigate to the FRONTEND folder:
 
 ```bash
+cd FRONTEND
+npm install  # First time only
 npm run dev
 ```
 
@@ -155,26 +166,34 @@ The application will be available at `http://localhost:5173`
 
 ## Available Scripts
 
+**Frontend (FRONTEND folder):**
+
 - `npm run dev` - Start the Vite development server
-- `npm run server` - Start the JSON Server mock API on port 3001
 - `npm run build` - Build the application for production
 - `npm run preview` - Preview the production build
 - `npm run lint` - Run ESLint for code quality checks
 
+**Backend (Backend folder):**
+
+- `npm run server` - Start the JSON Server mock API on port 10000
+
 ## API Endpoints
 
-The JSON Server provides the following endpoints:
+The JSON Server (running on port 10000) provides the following endpoints:
 
 - `GET /companies` - Fetch all companies
 - `GET /companies?_page=1&_limit=10` - Fetch paginated companies
 - `GET /companies?q=search_term` - Search companies
+- `GET /companies/:id` - Fetch a specific company by ID
 
 ## Usage Guide
 
 ### Searching Companies
 
-1. Use the search bar in the header to search across company names and descriptions
-2. Results update in real-time as you type
+1. Use the search bar in the header to search by company names
+2. Search matches companies whose names start with your search term
+3. Results update in real-time as you type
+4. Example: Searching "A" shows Apple, Amazon, Acme (not companies with A in the middle)
 
 ### Filtering Companies
 
@@ -205,6 +224,14 @@ The JSON Server provides the following endpoints:
 
 - Click the moon/sun icon in the header to toggle dark mode
 - Preference is saved to localStorage
+- All components support dark mode with blue accent colors
+
+### Auto-Collapse Filters
+
+- Filter panel automatically collapses when scrolling down through company listings
+- Manually toggle collapse/expand by clicking the filter panel header
+- Smooth animations for better user experience
+- Results counter always visible in collapsed state
 
 ## Data Schema
 
@@ -231,14 +258,18 @@ Edit `db.json` and add company objects to the `companies` array. The application
 
 ### Changing Colors
 
-Modify the color scheme in `tailwind.config.js`:
+The application uses a blue theme. To modify colors, edit `tailwind.config.js`:
 
 ```javascript
 theme: {
   extend: {
     colors: {
       primary: {
-        // Update these values
+        50: '#eff6ff',
+        100: '#dbeafe',
+        // ... update blue color scale
+        500: '#3b82f6',
+        // ... etc
       }
     }
   }
@@ -251,14 +282,15 @@ Update animation settings in `tailwind.config.js` or `index.css`.
 
 ## Technologies Used
 
-- **React 19.1** - UI library
+- **React 19.1** - UI library with latest features
 - **TypeScript 5.9** - Type-safe JavaScript
 - **Vite 7.1** - Fast build tool and dev server
-- **Tailwind CSS 4.1** - Utility-first CSS framework
-- **Axios 1.12** - HTTP client
-- **JSON Server 1.0** - Mock REST API
-- **Lucide React** - Icon library
-- **React Context API** - State management
+- **Tailwind CSS 3.4** - Utility-first CSS framework with custom blue theme
+- **Axios 1.12** - HTTP client for API requests
+- **JSON Server 0.17.4** - Mock REST API
+- **Lucide React** - Modern icon library
+- **React Context API** - Global state management
+- **Intersection Observer API** - Scroll-based UI interactions
 
 ## Browser Support
 
@@ -269,23 +301,29 @@ Update animation settings in `tailwind.config.js` or `index.css`.
 
 ## Performance Optimizations
 
-- Code splitting with React.lazy (can be added)
-- Memoization of filtered/sorted results
-- Efficient pagination to limit DOM nodes
-- CSS transitions instead of JavaScript animations
-- Lazy loading of images (can be added)
+- Efficient Context API usage for state management
+- Memoization of filtered and sorted results
+- Smart pagination to limit DOM nodes
+- CSS transitions with GPU acceleration for smooth animations
+- Intersection Observer API for performant scroll detection
+- Debounced scroll handlers to prevent excessive re-renders
+- Responsive loader with dynamic sizing
+- Optimized re-renders with proper React hooks dependencies
 
 ## Future Enhancements
 
 - [ ] Add company detail modal/page
 - [ ] Implement infinite scroll option
-- [ ] Add export to CSV functionality
+- [ ] Add export to CSV/PDF functionality
 - [ ] Include advanced filters (employee count range, founding year range)
 - [ ] Add company comparison feature
-- [ ] Implement favorites/bookmarks
+- [ ] Implement favorites/bookmarks with localStorage
 - [ ] Add analytics dashboard
-- [ ] Include keyboard navigation
-- [ ] Add accessibility improvements (ARIA labels)
+- [ ] Include keyboard navigation shortcuts
+- [ ] Add comprehensive accessibility improvements (ARIA labels, screen reader support)
+- [ ] Implement PWA features (offline support, installability)
+- [ ] Add user authentication and personalization
+- [ ] Include data visualization (charts, graphs)
 
 ## License
 
