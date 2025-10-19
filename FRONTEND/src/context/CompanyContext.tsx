@@ -103,7 +103,7 @@ export const CompanyProvider: React.FC<CompanyProviderProps> = ({ children }) =>
     if (filters.searchTerm) {
       const searchLower = filters.searchTerm.toLowerCase();
       result = result.filter((company) =>
-        company.name.toLowerCase().includes(searchLower)
+        company.name.toLowerCase().startsWith(searchLower)
       );
     }
 
